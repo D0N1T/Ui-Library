@@ -7181,9 +7181,9 @@ function library:CreateWindow(options, ...)
 		}
 		local daaata = {{"AddTextbox", "__Designer.Textbox.ImageAssetID", backgroundsection, {
 			Name = "Image Asset ID",
-			Placeholder = "rbxassetid://4427304036",
+			Placeholder = "rbxassetid://",
 			Flag = "__Designer.Background.ImageAssetID",
-			Value = "rbxassetid://4427304036",
+			Value = "rbxassetid://",
 			Callback = updatecolorsnotween
 		}}, {"AddColorpicker", "__Designer.Colorpicker.ImageColor", backgroundsection, {
 			Name = "Image Color",
@@ -7203,12 +7203,12 @@ function library:CreateWindow(options, ...)
 		}}, {"AddToggle", "__Designer.Toggle.UseBackgroundImage", backgroundsection, {
 			Name = "Use Background Image",
 			Flag = "__Designer.Background.UseBackgroundImage",
-			Value = true,
+			Value = false,
 			Callback = updatecolorsnotween
 		}}, {"AddPersistence", "__Designer.Persistence.ThemeFile", filessection, {
 			Name = "Theme Profile",
 			Flag = "__Designer.Files.ThemeFile",
-			Workspace = "Pepsi Lib Themes",
+			Workspace = "Meta Themes",
 			Flags = flags,
 			Suffix = "Theme",
 			Desginer = true
@@ -7302,7 +7302,7 @@ function library:CreateWindow(options, ...)
 		end
 		if options.Credit ~= false then
 			daaata[1 + #daaata] = {"AddLabel", "__Designer.Label.Creator", detailssection, {
-				Text = "Library by Pepsi#5229 "
+				Text = "Edit by D0N1 / Library by Pepsi#5229 "
 			}}
 		elseif "Gee, thanks for your support." then
 		end
